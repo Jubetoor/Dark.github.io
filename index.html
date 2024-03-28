@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="switch">
+            <input type="checkbox" name="" id="switch">
+            <label for="switch">
+                <button></button>
+            </label>
+        </div>
+    </div>
+
+    <script>
+        const switchInput = document.getElementById('switch');
+        const container = document.querySelector('.container');
+
+        switchInput.addEventListener ('change', () => {
+            const audio = new Audio('switch-1.mp3');
+            audio.play();
+            container.classList.toggle('darkTheme');
+        })
+
+    </script>
+
+</body>
+</html>
